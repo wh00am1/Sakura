@@ -140,7 +140,7 @@ def main():
 	e = ELFFile(open(fpath, 'rb'))
 	while(True):
 		c = raw_input('\nSakura>').split(' ')
-		print '[+] Your Command : {} {}'.format(c[0], c[1])
+		#print '[+] Your Command : {} {}'.format(c[0], c[1])
 		if c[0] == 'list' or c[0] == 'show':
 			w = c[1].replace('\n', '')
 			if w == 'sections' or w == 'secs':
