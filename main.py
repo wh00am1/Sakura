@@ -137,7 +137,7 @@ def main():
 	f = open(fpath, 'rb')
 	e = ELFFile(open(fpath, 'rb'))
 	while(True):
-		c = raw_input('\nDAGG>').split(' ')
+		c = raw_input('\nSakura>').split(' ')
 		print '[+] Your Command : {} {}'.format(c[0], c[1])
 		if c[0] == 'list' or c[0] == 'show':
 			w = c[1].replace('\n', '')
