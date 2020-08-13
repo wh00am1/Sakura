@@ -141,6 +141,7 @@ def main():
 	while(True):
 		c = raw_input('\nSakura>').split(' ')
 		#print '[+] Your Command : {} {}'.format(c[0], c[1])
+		
 		if c[0] == 'list' or c[0] == 'show':
 			w = c[1].replace('\n', '')
 			if w == 'sections' or w == 'secs':
@@ -160,11 +161,14 @@ def main():
 				disass(e, c[1], 3)
 			else:
 				disass(fpath, c[1], 2)
+
 		elif c[0].replace('\n', '') == 'checksec':
 			checksec(fpath)
+
 		elif c[0].replace('\n', '') == 'help':
 			print title
 			print usage
+
 		else:
 			print '[-] Command : {} {} not found'.format(c[0], c[1])
 			print 'Usage:'
