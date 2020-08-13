@@ -66,7 +66,9 @@ def CheckElf(file, path):
 		print '\t[+] Binary Arch : {}'.format(e.header.e_machine.split('_')[1])
 	except ELFError:
 		perror('{} not a valid ELF file'.format(file))
-
+def checksec(file):
+	file = ELF(file)
+	return 0
 def parsesections(e):
 	print '\n\t[+] Analysing sections of this file:'
 	for section in e.iter_sections():
@@ -158,6 +160,8 @@ def main():
 				disass(e, c[1], 3)
 			else:
 				disass(fpath, c[1], 2)
+		elif c[0].replace('\n', '') == 'checksec':
+			checksec(fpath)
 		elif c[0].replace('\n', '') == 'help':
 			print title
 			print usage
