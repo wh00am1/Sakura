@@ -1,7 +1,7 @@
 # Sakura : A interactive binary static analysing tool
 
 ## Screeshot
-![avatar](https://github.com/wh00am1/Sakura/blob/master/%E6%9C%AA%E5%91%BD%E5%90%8D.png)
+![avatar](https://github.com/wh00am1/Sakura/blob/master/screenshot.png)
 
 ## Requirements
 ### python 2.x
